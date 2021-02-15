@@ -1,0 +1,10 @@
+{
+  "item.vmmod.tomato": "Tomate",
+  "item.vmmod.poison_tomato": "Unreife Tomate",
+  "item.vmmod.tomato_cake": "TomatenKuchen",
+  "item.vmmod.tomato_cake_dough": "Ungebackener TomatenKuchen",
+  "advancements.vanillaminigames.root.title": "Vanillaminigames",
+  "advancements.vanillaminigames.root.description": "Alle VM Erfolge",
+  "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
+  "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen"
+}
