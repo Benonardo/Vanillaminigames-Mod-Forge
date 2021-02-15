@@ -25,8 +25,6 @@ import java.util.stream.Collectors;
 @Mod("vmmod")
 public class VmMod {
 
-    // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "vmmod";
 
     public VmMod() {
