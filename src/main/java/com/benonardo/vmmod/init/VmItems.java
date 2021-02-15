@@ -29,4 +29,9 @@ public class VmItems {
             "unbaked_tomato_cake",
             BasicItem::new
     );
+
+    public static final RegistryObject<Item> TROLL_FACE = ITEMS.register(
+            "troll_face",
+            BasicItem::new
+    );
 }

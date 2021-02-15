@@ -21,6 +21,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Collectors;
 
+import static java.lang.System.exit;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("vmmod")
 public class VmMod {
@@ -37,6 +39,8 @@ public class VmMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         VmItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        exit(0);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
