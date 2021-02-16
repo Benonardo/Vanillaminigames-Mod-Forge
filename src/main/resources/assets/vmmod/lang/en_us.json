@@ -7,5 +7,6 @@
   "advancements.vanillaminigames.root.title": "Vanillaminigames",
   "advancements.vanillaminigames.root.description": "All VM advancements",
   "advancements.vanillaminigames.baking.title": "Baaake Baaaake Baaaaky",
-  "advancements.vanillaminigames.baking.description": "Bake a TomatoCake in a furnace"
+  "advancements.vanillaminigames.baking.description": "Bake a TomatoCake in a furnace",
+  "itemGroup.vmmod.vanillaminigames": "Vanillaminigames"
 }

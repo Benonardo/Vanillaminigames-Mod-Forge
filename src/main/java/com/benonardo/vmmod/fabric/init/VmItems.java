@@ -1,7 +1,7 @@
-package com.benonardo.vmmod.init;
+package com.benonardo.vmmod.fabric.init;
 
-import com.benonardo.vmmod.VmMod;
-import com.benonardo.vmmod.items.*;
+import com.benonardo.vmmod.fabric.VmMod;
+import com.benonardo.vmmod.fabric.items.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

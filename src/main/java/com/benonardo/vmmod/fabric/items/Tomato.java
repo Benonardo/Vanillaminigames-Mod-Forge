@@ -1,6 +1,6 @@
-package com.benonardo.vmmod.items;
+package com.benonardo.vmmod.fabric.items;
 
-import com.benonardo.vmmod.VmMod;
+import com.benonardo.vmmod.fabric.VmMod;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 

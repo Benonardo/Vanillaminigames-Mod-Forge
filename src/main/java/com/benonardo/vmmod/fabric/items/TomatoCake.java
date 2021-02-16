@@ -1,10 +1,8 @@
-package com.benonardo.vmmod.items;
+package com.benonardo.vmmod.fabric.items;
 
-import com.benonardo.vmmod.VmMod;
+import com.benonardo.vmmod.fabric.VmMod;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 
 public class TomatoCake extends Item {
 
