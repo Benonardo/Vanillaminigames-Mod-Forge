@@ -30,17 +30,11 @@ public class VmMod {
     public static final String MOD_ID = "vmmod";
 
     public VmMod() {
-        // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
         VmItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
-        exit(0);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
