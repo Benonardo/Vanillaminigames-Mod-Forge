@@ -1,6 +1,7 @@
-package com.benonardo.vmmod.fabric;
+package com.benonardo.vmmod.forge;
 
-import com.benonardo.vmmod.fabric.init.VmItems;
+import com.benonardo.vmmod.forge.events.VmEvents;
+import com.benonardo.vmmod.forge.init.VmItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +22,7 @@ public class VmMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         VmItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
     }
 
     private void setup(final FMLCommonSetupEvent event) {

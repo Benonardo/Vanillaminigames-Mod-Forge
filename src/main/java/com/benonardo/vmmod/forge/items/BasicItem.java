@@ -1,6 +1,6 @@
-package com.benonardo.vmmod.fabric.items;
+package com.benonardo.vmmod.forge.items;
 
-import com.benonardo.vmmod.fabric.VmMod;
+import com.benonardo.vmmod.forge.VmMod;
 import net.minecraft.item.Item;
 
 public class BasicItem extends Item {

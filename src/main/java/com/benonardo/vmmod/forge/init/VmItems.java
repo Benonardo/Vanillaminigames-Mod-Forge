@@ -1,7 +1,7 @@
-package com.benonardo.vmmod.fabric.init;
+package com.benonardo.vmmod.forge.init;
 
-import com.benonardo.vmmod.fabric.VmMod;
-import com.benonardo.vmmod.fabric.items.*;
+import com.benonardo.vmmod.forge.VmMod;
+import com.benonardo.vmmod.forge.items.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,5 +33,9 @@ public class VmItems {
     public static final RegistryObject<Item> TROLL_FACE = ITEMS.register(
             "troll_face",
             BasicItem::new
+    );
+    public static final RegistryObject<Item> TOTEM_OF_DYING = ITEMS.register(
+            "totem_of_dying",
+            TotemOfDying::new
     );
 }

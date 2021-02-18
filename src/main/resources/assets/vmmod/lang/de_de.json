@@ -2,11 +2,13 @@
   "item.vmmod.tomato": "Tomate",
   "item.vmmod.poison_tomato": "Unreife Tomate",
   "item.vmmod.tomato_cake": "TomatenKuchen",
-  "item.vmmod.tomato_cake_dough": "Ungebackener TomatenKuchen",
+  "item.vmmod.unbaked_tomato_cake": "Ungebackener TomatenKuchen",
   "item.vmmod.troll_face": "Troll",
+  "item.vmmod.totem_of_dying": "Totem der Sterblichkeit",
   "advancements.vanillaminigames.root.title": "Vanillaminigames",
   "advancements.vanillaminigames.root.description": "Alle VM Erfolge",
   "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
   "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen",
-  "itemGroup.vmmod.vanillaminigames": "Vanillaminigames"
+  "itemGroup.vmmod.vanillaminigames": "Vanillaminigames",
+  "death.vmmod.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "vmmod:item/unbaked_tomato_cake"
+    "layer0": "vmmod:item/totem_of_dying"
   }
 }
