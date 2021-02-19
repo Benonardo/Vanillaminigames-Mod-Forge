@@ -10,5 +10,5 @@
   "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
   "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen",
   "itemGroup.vmmod.vanillaminigames": "Vanillaminigames",
-  "death.vmmod.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet"
+  "death.attack.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet"
 }
