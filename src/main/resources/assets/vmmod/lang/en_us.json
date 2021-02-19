@@ -10,5 +10,6 @@
   "advancements.vanillaminigames.baking.title": "Baaake Baaaake Baaaaky",
   "advancements.vanillaminigames.baking.description": "Bake a TomatoCake in a furnace",
   "itemGroup.vmmod.vanillaminigames": "Vanillaminigames",
-  "death.attack.totem": "%1$s was killed by the holy totem of dying"
+  "death.attack.totem": "%1$s was killed by the holy totem of dying",
+  "itemGroup.vanillaminigames": "Vanilla Minigames"
 }
