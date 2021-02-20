@@ -13,6 +13,7 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.server.ServerWorld;
 
 import javax.annotation.Nonnull;
@@ -22,6 +23,7 @@ public class ChaosBeeEntity extends BeeEntity {
 
     public static final EntityType<ChaosBeeEntity> ENTITY_TYPE = EntityType.Builder.create(ChaosBeeEntity::new, EntityClassification.CREATURE).size(0.7F, 0.6F).trackingRange(16).build(VmMod.MOD_ID + "chaos_bee");
     public static final DamageSource DAMAGE_SOURCE = new DamageSource("chaos_bee").setDamageAllowedInCreativeMode().setExplosion().setDamageBypassesArmor();
+    public static final MobSpawnInfo.Spawners SPAWNERS = new MobSpawnInfo.Spawners(ENTITY_TYPE, 1, 1, 1);
 
     public ChaosBeeEntity(EntityType<? extends BeeEntity> type, World world) {
         super(ENTITY_TYPE, world);

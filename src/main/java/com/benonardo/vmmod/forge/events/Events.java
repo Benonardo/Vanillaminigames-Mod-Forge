@@ -1,10 +1,12 @@
 package com.benonardo.vmmod.forge.events;
 
 import com.benonardo.vmmod.forge.entities.ChaosBeeEntity;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -29,5 +31,10 @@ public class Events {
         if (!event.getSource().damageType.equals("chaos_bee")) return;
 
         event.getEntity().sendMessage(new TranslationTextComponent("vmmod.chaos_bee.laugh"), event.getEntity().getUniqueID());
+    }
+
+    @SubscribeEvent
+    public void onBiomeLoad(BiomeLoadingEvent event) {
+        event.getSpawns().getSpawner(EntityClassification.CREATURE).add(ChaosBeeEntity.SPAWNERS);
     }
 }
