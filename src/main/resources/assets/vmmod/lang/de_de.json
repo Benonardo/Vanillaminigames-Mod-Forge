@@ -11,7 +11,9 @@
   "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
   "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen",
   "death.attack.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet",
+  "death.attack.chaos_bee": "%1$s wurde von einer chaotischen Biene getötet",
   "vmmod.chaos_bee.warning": "<chaosbiene> Pass auf, ich mach uptime aus!",
   "vmmod.chaos_bee.danger": "<chaosbiene> So, uptime ist aus!",
-  "vmmod.chaos_bee.name": "Chaos Biene"
+  "vmmod.chaos_bee.name": "Chaos Biene",
+  "vmmod.chaos_bee.laugh": "<chaosbiene> Hehe"
 }
