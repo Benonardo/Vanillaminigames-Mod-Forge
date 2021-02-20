@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "WWW"
+  ],
+  "key": {
+    "T": {
+      "item": "vmmod:tomato"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "vmmod:unbaked_tomato_cake",
+    "count": 1
+  }
+}
