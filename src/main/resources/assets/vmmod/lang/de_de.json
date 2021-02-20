@@ -5,10 +5,13 @@
   "item.vmmod.unbaked_tomato_cake": "Ungebackener TomatenKuchen",
   "item.vmmod.troll_face": "Troll",
   "item.vmmod.totem_of_dying": "Totem der Sterblichkeit",
+  "item.vmmod.chaos_bee_spawn_egg": "Chaos-Biene-Spawn-Ei",
   "advancements.vanillaminigames.root.title": "Vanillaminigames",
   "advancements.vanillaminigames.root.description": "Alle VM Erfolge",
   "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
   "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen",
-  "itemGroup.vmmod.vanillaminigames": "Vanillaminigames",
-  "death.attack.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet"
+  "death.attack.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet",
+  "vmmod.chaos_bee.warning": "<chaosbiene> Pass auf, ich mach uptime aus!",
+  "vmmod.chaos_bee.danger": "<chaosbiene> So, uptime ist aus!",
+  "vmmod.chaos_bee.name": "Chaos Biene"
 }

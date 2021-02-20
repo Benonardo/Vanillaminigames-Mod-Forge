@@ -5,11 +5,14 @@
   "item.vmmod.unbaked_tomato_cake": "Unbaked TomatoCake",
   "item.vmmod.troll_face": "Troll",
   "item.vmmod.totem_of_dying": "Totem of Dying",
+  "item.vmmod.chaos_bee_spawn_egg": "Chaos Bee Spawn Egg",
   "advancements.vanillaminigames.root.title": "Vanillaminigames",
   "advancements.vanillaminigames.root.description": "All VM advancements",
   "advancements.vanillaminigames.baking.title": "Baaake Baaaake Baaaaky",
   "advancements.vanillaminigames.baking.description": "Bake a TomatoCake in a furnace",
-  "itemGroup.vmmod.vanillaminigames": "Vanillaminigames",
   "death.attack.totem": "%1$s was killed by the holy totem of dying",
-  "itemGroup.vanillaminigames": "Vanilla Minigames"
+  "itemGroup.vanillaminigames": "Vanilla Minigames",
+  "vmmod.chaos_bee.warning": "<chaosbee> I will turn uptime off!",
+  "vmmod.chaos_bee.danger": "<chaosbee> Uptime is off!",
+  "vmmod.chaos_bee.name": "Chaos Bee"
 }

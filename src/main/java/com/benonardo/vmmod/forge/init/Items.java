@@ -17,4 +17,5 @@ public class Items {
     public static final RegistryObject<Item> UNBAKED_TOMATO_CAKE = ITEMS.register("unbaked_tomato_cake", BasicItem::new);
     public static final RegistryObject<Item> TROLL_FACE = ITEMS.register("troll_face", BasicItem::new);
     public static final RegistryObject<Item> TOTEM_OF_DYING = ITEMS.register("totem_of_dying", TotemOfDying::new);
+    public static final RegistryObject<Item> CHAOS_BEE_SPAWN_EGG = ITEMS.register("chaos_bee_spawn_egg", ChaosBeeSpawnEgg::new);
 }
