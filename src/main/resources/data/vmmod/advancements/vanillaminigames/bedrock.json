@@ -1,0 +1,35 @@
+{
+  "parent": "vmmod:vanillaminigames/root",
+  "display": {
+    "icon": {
+      "item": "vmmod:troll_face"
+    },
+    "title": {
+      "translate": "advancements.vanillaminigames.troll_face.title"
+    },
+    "description": {
+      "translate": "advancements.vanillaminigames.troll_face.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "troll_face": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "vmmod:troll_face"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "troll_face"
+    ]
+  ]
+}

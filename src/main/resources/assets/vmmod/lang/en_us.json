@@ -1,18 +1,28 @@
 {
+  "block.minecraft.bedrock": "Bedrock",
+
   "item.vmmod.tomato": "Tomato",
-  "item.vmmod.poison_tomato": "Poison Tomato",
+  "item.vmmod.poison_tomato": "Immature Tomato",
   "item.vmmod.tomato_cake": "TomatoCake",
   "item.vmmod.unbaked_tomato_cake": "Unbaked TomatoCake",
   "item.vmmod.troll_face": "Troll",
   "item.vmmod.totem_of_dying": "Totem of Dying",
   "item.vmmod.chaos_bee_spawn_egg": "Chaos Bee Spawn Egg",
-  "advancements.vanillaminigames.root.title": "Vanillaminigames",
-  "advancements.vanillaminigames.root.description": "All VM advancements",
-  "advancements.vanillaminigames.baking.title": "Baaake Baaaake Baaaaky",
+
+  "advancements.vanillaminigames.root.title": "Vanilla Minigames",
+  "advancements.vanillaminigames.root.description": "All advancements for the Vanilla Minigames Mod",
+  "advancements.vanillaminigames.baking.title": "Baaake Baaaake Caaaaky",
   "advancements.vanillaminigames.baking.description": "Bake a TomatoCake in a furnace",
+  "advancements.vanillaminigames.bedrock.title": "Craft Bedrock",
+  "advancements.vanillaminigames.bedrock.description": "Combine a bed and cobblestone to bedrock",
+  "advancements.vanillaminigames.troll_face.title": "Trolololololol",
+  "advancements.vanillaminigames.troll_face.description": "Put white dye around bedrock to get a troll face",
+
   "death.attack.totem": "%1$s was killed by the holy totem of dying",
   "death.attack.chaos_bee": "%1$s was killed by a chaotic bee",
+
   "itemGroup.vanillaminigames": "Vanilla Minigames",
+
   "vmmod.chaos_bee.warning": "<chaosbee> I will turn uptime off!",
   "vmmod.chaos_bee.danger": "<chaosbee> Uptime is off!",
   "vmmod.chaos_bee.name": "Chaos Bee",

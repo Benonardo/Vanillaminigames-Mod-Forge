@@ -1,4 +1,6 @@
 {
+  "block.minecraft.bedrock": "Bettengestein",
+
   "item.vmmod.tomato": "Tomate",
   "item.vmmod.poison_tomato": "Unreife Tomate",
   "item.vmmod.tomato_cake": "TomatenKuchen",
@@ -6,12 +8,21 @@
   "item.vmmod.troll_face": "Troll",
   "item.vmmod.totem_of_dying": "Totem der Sterblichkeit",
   "item.vmmod.chaos_bee_spawn_egg": "Chaos-Biene-Spawn-Ei",
-  "advancements.vanillaminigames.root.title": "Vanillaminigames",
-  "advancements.vanillaminigames.root.description": "Alle VM Erfolge",
+
+  "advancements.vanillaminigames.root.title": "Vanilla Minigames",
+  "advancements.vanillaminigames.root.description": "Alle Erfolge für die Vanilla Minigames Mod",
   "advancements.vanillaminigames.baking.title": "Baaacke Baaacke Baaaaky",
   "advancements.vanillaminigames.baking.description": "Backe einen TomatenKuchen im Ofen",
+  "advancements.vanillaminigames.bedrock.title": "Mache Bettengestein",
+  "advancements.vanillaminigames.bedrock.description": "Kompiniere ein Bett und Gestein zu Bettengestein",
+  "advancements.vanillaminigames.troll_face.title": "Trolololololol",
+  "advancements.vanillaminigames.troll_face.description": "Umrande Bettengestein mit einer Schicht weißer Farbe",
+
   "death.attack.totem": "%1$s wurde von dem heiligen Totem der Sterblichkeit getötet",
   "death.attack.chaos_bee": "%1$s wurde von einer chaotischen Biene getötet",
+
+  "itemGroup.vanillaminigames": "Vanilla Minigames",
+
   "vmmod.chaos_bee.warning": "<chaosbiene> Pass auf, ich mach uptime aus!",
   "vmmod.chaos_bee.danger": "<chaosbiene> So, uptime ist aus!",
   "vmmod.chaos_bee.name": "Chaos Biene",
