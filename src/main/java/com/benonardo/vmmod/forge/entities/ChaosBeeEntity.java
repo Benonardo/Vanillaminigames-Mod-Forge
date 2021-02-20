@@ -1,6 +1,7 @@
 package com.benonardo.vmmod.forge.entities;
 
 import com.benonardo.vmmod.forge.VmMod;
+import net.minecraft.entity.AgeableEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.MobEntity;
@@ -8,10 +9,11 @@ import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.passive.BeeEntity;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public class ChaosBeeEntity extends BeeEntity {
@@ -39,5 +41,10 @@ public class ChaosBeeEntity extends BeeEntity {
                 .createMutableAttribute(Attributes.ATTACK_DAMAGE, 20.0D)
                 .createMutableAttribute(Attributes.FLYING_SPEED, 3.0D)
                 .createMutableAttribute(Attributes.FOLLOW_RANGE, 48.0D);
+    }
+
+    @Override
+    public ChaosBeeEntity func_241840_a(@Nonnull ServerWorld world, @Nonnull AgeableEntity parent) {
+        return ENTITY_TYPE.create(world);
     }
 }
