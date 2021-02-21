@@ -12,6 +12,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.Explosion;
+import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.server.ServerWorld;
@@ -58,6 +59,8 @@ public class ChaosBeeEntity extends BeeEntity {
         super.livingTick();
 
         if (hasStung() || getEntityWorld().getRandom().nextFloat() > 0.0005) return;
+        if (!getEntityWorld().getGameRules().getBoolean(GameRules.MOB_GRIEFING)) return;
+
         getEntityWorld().createExplosion(this, DAMAGE_SOURCE, null, getPosX(), getPosY(), getPosZ(), 3, false, Explosion.Mode.DESTROY).doExplosionA();
     }
 }
