@@ -23,7 +23,7 @@ public class ChaosBeeEntity extends BeeEntity {
 
     public static final EntityType<ChaosBeeEntity> ENTITY_TYPE = EntityType.Builder.create(ChaosBeeEntity::new, EntityClassification.CREATURE).size(0.7F, 0.6F).trackingRange(16).build(VmMod.MOD_ID + "chaos_bee");
     public static final DamageSource DAMAGE_SOURCE = new DamageSource("chaos_bee").setDamageAllowedInCreativeMode().setExplosion().setDamageBypassesArmor();
-    public static final MobSpawnInfo.Spawners SPAWNERS = new MobSpawnInfo.Spawners(ENTITY_TYPE, 1, 1, 1);
+    public static final MobSpawnInfo.Spawners SPAWNERS = new MobSpawnInfo.Spawners(ENTITY_TYPE, 3, 1, 1);
 
     public ChaosBeeEntity(EntityType<? extends BeeEntity> type, World world) {
         super(ENTITY_TYPE, world);
@@ -57,7 +57,7 @@ public class ChaosBeeEntity extends BeeEntity {
     public void livingTick() {
         super.livingTick();
 
-        if (hasStung() || getEntityWorld().getRandom().nextFloat() > 0.0001) return;
-        getEntityWorld().createExplosion(this, DAMAGE_SOURCE, null, getPosX(), getPosY(), getPosZ(), 3, false, Explosion.Mode.DESTROY);
+        if (hasStung() || getEntityWorld().getRandom().nextFloat() > 0.0005) return;
+        getEntityWorld().createExplosion(this, DAMAGE_SOURCE, null, getPosX(), getPosY(), getPosZ(), 3, false, Explosion.Mode.DESTROY).doExplosionA();
     }
 }
