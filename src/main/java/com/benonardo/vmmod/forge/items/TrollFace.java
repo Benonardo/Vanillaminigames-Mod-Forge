@@ -1,7 +1,7 @@
 package com.benonardo.vmmod.forge.items;
 
 import com.benonardo.vmmod.forge.VmMod;
-import com.benonardo.vmmod.forge.utils.TrollFaceMaterial;
+import com.benonardo.vmmod.forge.materials.TrollFaceMaterial;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;

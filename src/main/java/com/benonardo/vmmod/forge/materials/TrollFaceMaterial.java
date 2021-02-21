@@ -1,4 +1,4 @@
-package com.benonardo.vmmod.forge.utils;
+package com.benonardo.vmmod.forge.materials;
 
 import com.benonardo.vmmod.forge.init.Items;
 import net.minecraft.inventory.EquipmentSlotType;
