@@ -33,5 +33,7 @@
   "vmmod.chaos_bee.warning": "<chaosbiene> Pass auf, ich mach uptime aus!",
   "vmmod.chaos_bee.danger": "<chaosbiene> So, uptime ist aus!",
   "vmmod.chaos_bee.name": "Chaos Biene",
-  "vmmod.chaos_bee.laugh": "<chaosbiene> Hehe"
+  "vmmod.chaos_bee.laugh": "<chaosbiene> Hehe",
+
+  "vmmod.bot_crashed": "<Uptime> Bot crashed (theoretisch .-.)"
 }

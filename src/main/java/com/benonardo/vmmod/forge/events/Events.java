@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,5 +37,11 @@ public class Events {
     @SubscribeEvent
     public void onBiomeLoad(BiomeLoadingEvent event) {
         event.getSpawns().getSpawner(EntityClassification.CREATURE).add(ChaosBeeEntity.SPAWNERS);
+    }
+
+    @SubscribeEvent
+    public void onServerTick(TickEvent.WorldTickEvent event) {
+        if (event.world.getRandom().nextFloat() > 0.00025) return;
+        event.world.getPlayers().forEach(player -> player.sendMessage(new TranslationTextComponent("vmmod.bot_crashed"), player.getUniqueID()));
     }
 }
