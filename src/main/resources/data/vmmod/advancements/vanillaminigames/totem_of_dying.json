@@ -1,0 +1,35 @@
+{
+  "parent": "vmmod:vanillaminigames/bedrock",
+  "display": {
+    "icon": {
+      "item": "vmmod:totem_of_dying"
+    },
+    "title": {
+      "translate": "advancements.vanillaminigames.totem_of_dying.title"
+    },
+    "description": {
+      "translate": "advancements.vanillaminigames.totem_of_dying.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "totem_of_dying": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "vmmod:totem_of_dying"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "totem_of_dying"
+    ]
+  ]
+}

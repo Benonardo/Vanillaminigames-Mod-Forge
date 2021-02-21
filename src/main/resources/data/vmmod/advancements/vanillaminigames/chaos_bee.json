@@ -1,0 +1,38 @@
+{
+  "parent": "vmmod:vanillaminigames/bedrock",
+  "display": {
+    "icon": {
+      "item": "vmmod:chaos_bee_spawn_egg"
+    },
+    "title": {
+      "translate": "advancements.vanillaminigames.chaos_bee.title"
+    },
+    "description": {
+      "translate": "advancements.vanillaminigames.chaos_bee.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chaos_bee": {
+      "trigger": "minecraft:entity_killed_player",
+      "type": "vmmod:chaos_bee",
+      "entity": {
+        "type": "vmmod:chaos_bee"
+      },
+      "conditions": {
+        "type": "vmmod:chaos_bee",
+        "entity": {
+          "type": "vmmod:chaos_bee"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chaos_bee"
+    ]
+  ]
+}

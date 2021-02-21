@@ -18,6 +18,12 @@
   "advancements.vanillaminigames.bedrock.description": "Combine a bed and cobblestone to bedrock",
   "advancements.vanillaminigames.troll_face.title": "Trolololololol",
   "advancements.vanillaminigames.troll_face.description": "Put white dye around bedrock to get a troll face",
+  "advancements.vanillaminigames.tomato_shit.title": "Tomato Shit",
+  "advancements.vanillaminigames.tomato_shit.description": "Make Tomato Shit from eight immature tomatoes and one troll face",
+  "advancements.vanillaminigames.chaos_bee.title": "Chaos Bee",
+  "advancements.vanillaminigames.chaos_bee.description": "Die with the help of a chaotic bee",
+  "advancements.vanillaminigames.totem_of_dying.title": "Totem of Dying",
+  "advancements.vanillaminigames.totem_of_dying.description": "Obtain the totem of dying",
 
   "death.attack.totem": "%1$s was killed by the holy totem of dying",
   "death.attack.chaos_bee": "%1$s was killed by a chaotic bee",

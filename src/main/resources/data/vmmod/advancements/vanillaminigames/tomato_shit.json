@@ -1,0 +1,35 @@
+{
+  "parent": "vmmod:vanillaminigames/troll_face",
+  "display": {
+    "icon": {
+      "item": "vmmod:tomato_shit"
+    },
+    "title": {
+      "translate": "advancements.vanillaminigames.tomato_shit.title"
+    },
+    "description": {
+      "translate": "advancements.vanillaminigames.tomato_shit.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tomato_shit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "vmmod:tomato_shit"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tomato_shit"
+    ]
+  ]
+}
