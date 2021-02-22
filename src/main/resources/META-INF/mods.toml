@@ -9,7 +9,7 @@ displayName = "VanillaMinigames Mod"
 displayURL = "https://vanillaminigames.eu/"
 logoFile = "logo.png"
 credits = "Thanks to thevalleyy for this great textures"
-authors = ["Benonardo", "thevalleyy", "booky10"]
+authors = ["Benonardo", "booky10"]
 description = 'A mod with insiders from the VanillaMinigames.eu Minecraft Server.'
 
 [[dependencies.vmmod]]
