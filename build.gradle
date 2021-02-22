@@ -22,7 +22,8 @@ def gitVersion = { ->
     def stdout = new ByteArrayOutputStream()
 
     exec {
-        commandLine 'git', 'describe', '--tags'; standardOutput = stdout
+        commandLine 'git', 'describe', '--tags', 'HEAD'
+        standardOutput = stdout
     }
 
     def string = stdout.toString().trim()
