@@ -22,15 +22,11 @@ def gitVersion = { ->
     def stdout = new ByteArrayOutputStream()
 
     exec {
-        commandLine 'git', 'describe', '--tags', 'HEAD'
+        commandLine 'git', 'describe', '--tags', '--abbrev=0', '--always', 'HEAD'
         standardOutput = stdout
     }
 
-    def string = stdout.toString().trim()
-    def split = string.split("-")
-
-    if (split.length <= 1) return string
-    else return split[split.length - 1]
+    return stdout.toString().trim()
 }
 
 version = "${gitVersion}"
