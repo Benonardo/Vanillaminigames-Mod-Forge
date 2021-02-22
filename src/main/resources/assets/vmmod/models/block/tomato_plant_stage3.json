@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "vmmod:block/tomato_plant_stage3"
+  }
+}
