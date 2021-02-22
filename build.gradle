@@ -13,12 +13,28 @@ buildscript {
     }
 }
 
-apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
+apply plugin: 'java'
 
-version = '1.0'
+apply plugin: 'net.minecraftforge.gradle'
+
+def gitVersion = { ->
+    def stdout = new ByteArrayOutputStream()
+
+    exec {
+        commandLine 'git', 'describe', '--tags'; standardOutput = stdout
+    }
+
+    def string = stdout.toString().trim()
+    def split = string.split("-")
+
+    if (split.length <= 1) return string
+    else return split[split.length - 1]
+}
+
+version = "${gitVersion}"
 group = 'com.benonardo'
-archivesBaseName = 'vmmod'
+archivesBaseName = project.name.toLowerCase()
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
@@ -71,7 +87,7 @@ minecraft {
 
 processResources {
     from(sourceSets.main.resources.srcDirs) {
-        filter ReplaceTokens, tokens: [version: version]
+        filter ReplaceTokens, tokens: [version: project.version.toString()]
     }
 }
 
@@ -84,7 +100,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "vanillaminigamesmod",
+                "Specification-Title"     : project.name.toLowerCase(),
                 "Specification-Vendor"    : "Benonardo",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,

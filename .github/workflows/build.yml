@@ -1,41 +1,39 @@
-# Automatically build the project and run any configured tests for every push
-# and submitted pull request. This can help catch issues that only occur on
-# certain platforms or Java versions, and provides a first line of defence
-# against bad commits.
-
 name: build
-on: [pull_request, push]
+on: [ pull_request, push, workflow_dispatch ]
 
 jobs:
   build:
     strategy:
       matrix:
-        # Use these Java versions
-        java: [
-            1.8,  # Minimum supported by Minecraft
-            11,   # Current Java LTS
-            15    # Latest version
-        ]
-        # and run on both Linux and Windows
-        os: [ubuntu-20.04, windows-latest]
-    runs-on: ${{ matrix.os }}
+        java: [ 1.8, 11 ]
+    runs-on: ubuntu-20.04
+
     steps:
-      - name: checkout repository
+      - name: Checkout Repository
+        id: checkout
         uses: actions/checkout@v2
-      - name: validate gradle wrapper
+
+      - name: Validate Gradle Wrapper
+        id: validate_gradle
         uses: gradle/wrapper-validation-action@v1
-      - name: setup jdk ${{ matrix.java }}
+
+      - name: Setup JDK ${{ matrix.java }}
+        id: setup_jdk
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java }}
-      - name: make gradle wrapper executable
-        if: ${{ runner.os != 'Windows' }}
+
+      - name: Make Gradle Wrapper Executable
+        id: make_executable
         run: chmod +x ./gradlew
-      - name: build
+
+      - name: Build
+        id: build
         run: ./gradlew build
-      - name: capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '11' }} # Only upload artifacts built from LTS java on one OS
+
+      - name: Upload Mod Files
+        id: upload
         uses: actions/upload-artifact@v2
         with:
-          name: Artifacts
+          name: "VanillaMinigamesMod Files (JDK: ${{ matrix.java }})"
           path: build/libs/
