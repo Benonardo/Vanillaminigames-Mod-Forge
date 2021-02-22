@@ -35,5 +35,5 @@ jobs:
         id: upload
         uses: actions/upload-artifact@v2
         with:
-          name: "VanillaMinigamesMod Files (JDK: ${{ matrix.java }})"
+          name: "VanillaMinigamesMod Files ${{ matrix.java }}"
           path: build/libs/
