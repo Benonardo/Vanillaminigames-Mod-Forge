@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft:item/pumpkin_seeds"
+    "layer0": "vmmod:item/tomato_seeds"
   }
 }
