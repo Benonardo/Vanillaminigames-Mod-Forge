@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "STS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "vmmod:tomato_shit"
+    },
+    "T": {
+      "item": "vmmod:troll_face"
+    }
+  },
+  "result": {
+    "item": "vmmod:peepo_rage",
+    "count": 1
+  }
+}

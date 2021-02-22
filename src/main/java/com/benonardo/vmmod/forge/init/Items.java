@@ -20,4 +20,5 @@ public class Items {
     public static final RegistryObject<Item> CHAOS_BEE_SPAWN_EGG = ITEMS.register("chaos_bee_spawn_egg", ChaosBeeSpawnEgg::new);
     public static final RegistryObject<Item> TOMATO_SHIT = ITEMS.register("tomato_shit", TomatoShit::new);
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds", TomatoSeeds::new);
+    public static final RegistryObject<Item> PEPO_RAGE = ITEMS.register("pepo_rage", PepoRage::new);
 }
