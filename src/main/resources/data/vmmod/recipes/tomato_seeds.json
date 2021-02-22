@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vmmod:tomato"
+    }
+  ],
+  "result": {
+    "item": "vmmod:tomato_seeds",
+    "count": 1
+  }
+}
