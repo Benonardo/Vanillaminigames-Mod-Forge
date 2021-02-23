@@ -7,6 +7,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.TextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -38,6 +39,8 @@ public class Events {
 
     @SubscribeEvent
     public void onBiomeLoad(BiomeLoadingEvent event) {
+        if (event.getCategory().equals(Biome.Category.OCEAN)) return;
+
         event.getSpawns().getSpawner(EntityClassification.CREATURE).add(ChaosBeeEntity.SPAWNERS);
         event.getSpawns().getSpawner(EntityClassification.MONSTER).add(FakePlayerEntity.SPAWNERS);
         event.getSpawns().getSpawner(EntityClassification.CREATURE).add(TomatoEntity.SPAWNERS);
