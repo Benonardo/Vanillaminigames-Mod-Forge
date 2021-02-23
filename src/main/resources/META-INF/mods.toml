@@ -4,7 +4,7 @@ license = "MIT"
 
 [[mods]]
 modId = "vmmod"
-version = "@version@"
+version = "1.0.0"
 displayName = "VanillaMinigames Mod"
 displayURL = "https://vanillaminigames.eu/"
 logoFile = "logo.png"
