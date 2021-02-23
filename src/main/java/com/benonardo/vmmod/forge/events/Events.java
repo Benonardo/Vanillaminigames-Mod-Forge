@@ -2,6 +2,7 @@ package com.benonardo.vmmod.forge.events;
 
 import com.benonardo.vmmod.forge.entities.ChaosBeeEntity;
 import com.benonardo.vmmod.forge.entities.FakePlayerEntity;
+import com.benonardo.vmmod.forge.entities.TomatoEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.TextComponent;
@@ -39,6 +40,7 @@ public class Events {
     public void onBiomeLoad(BiomeLoadingEvent event) {
         event.getSpawns().getSpawner(EntityClassification.CREATURE).add(ChaosBeeEntity.SPAWNERS);
         event.getSpawns().getSpawner(EntityClassification.MONSTER).add(FakePlayerEntity.SPAWNERS);
+        event.getSpawns().getSpawner(EntityClassification.CREATURE).add(TomatoEntity.SPAWNERS);
     }
 
     @SubscribeEvent

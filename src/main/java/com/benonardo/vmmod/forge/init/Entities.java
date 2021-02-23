@@ -4,6 +4,7 @@ package com.benonardo.vmmod.forge.init;
 import com.benonardo.vmmod.forge.VmMod;
 import com.benonardo.vmmod.forge.entities.ChaosBeeEntity;
 import com.benonardo.vmmod.forge.entities.FakePlayerEntity;
+import com.benonardo.vmmod.forge.entities.TomatoEntity;
 import net.minecraft.client.renderer.entity.BeeRenderer;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.fml.RegistryObject;
@@ -17,4 +18,5 @@ public class Entities {
 
     public static final RegistryObject<EntityType<ChaosBeeEntity>> CHAOS_BEE = ENTITIES.register("chaos_bee", () -> ChaosBeeEntity.ENTITY_TYPE);
     public static final RegistryObject<EntityType<FakePlayerEntity>> FAKE_PLAYER = ENTITIES.register("fake_player", () -> FakePlayerEntity.ENTITY_TYPE);
+    public static final RegistryObject<EntityType<TomatoEntity>> TOMATO = ENTITIES.register("tomato", () -> TomatoEntity.ENTITY_TYPE);
 }
