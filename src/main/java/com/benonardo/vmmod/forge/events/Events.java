@@ -1,6 +1,7 @@
 package com.benonardo.vmmod.forge.events;
 
 import com.benonardo.vmmod.forge.entities.ChaosBeeEntity;
+import com.benonardo.vmmod.forge.entities.FakePlayerEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.text.TextComponent;
@@ -37,6 +38,7 @@ public class Events {
     @SubscribeEvent
     public void onBiomeLoad(BiomeLoadingEvent event) {
         event.getSpawns().getSpawner(EntityClassification.CREATURE).add(ChaosBeeEntity.SPAWNERS);
+        event.getSpawns().getSpawner(EntityClassification.MONSTER).add(FakePlayerEntity.SPAWNERS);
     }
 
     @SubscribeEvent

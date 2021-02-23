@@ -1,17 +1,23 @@
 package com.benonardo.vmmod.forge;
 
 import com.benonardo.vmmod.forge.entities.ChaosBeeEntity;
+import com.benonardo.vmmod.forge.entities.FakePlayerEntity;
 import com.benonardo.vmmod.forge.events.Events;
 import com.benonardo.vmmod.forge.init.Blocks;
 import com.benonardo.vmmod.forge.init.Entities;
 import com.benonardo.vmmod.forge.init.Items;
+import com.benonardo.vmmod.forge.renderer.FakePlayerRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.entity.BeeRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.PlayerRenderer;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -34,6 +40,9 @@ public class VmMod {
     private void setup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> GlobalEntityTypeAttributes.put(Entities.CHAOS_BEE.get(), ChaosBeeEntity.setCustomAttributes().create()));
         RenderingRegistry.registerEntityRenderingHandler(Entities.CHAOS_BEE.get(), BeeRenderer::new);
+
+        event.enqueueWork(() -> GlobalEntityTypeAttributes.put(Entities.FAKE_PLAYER.get(), FakePlayerEntity.setCustomAttributes().create()));
+        RenderingRegistry.registerEntityRenderingHandler(Entities.FAKE_PLAYER.get(), FakePlayerRenderer::new);
 
         RenderTypeLookup.setRenderLayer(Blocks.TOMATO_PLANT.get(), RenderType.getCutout());
     }

@@ -11,6 +11,7 @@
   "item.vmmod.tomato_shit": "TomatoShit",
   "item.vmmod.tomato_seeds": "Tomato Seeds",
   "item.vmmod.pepo_rage": "Pepo Rage",
+  "item.vmmod.fake_player_spawn_egg": "J_Phili Spawn Egg",
 
   "advancements.vanillaminigames.root.title": "Vanilla Minigames",
   "advancements.vanillaminigames.root.description": "All advancements for the Vanilla Minigames Mod",
@@ -36,6 +37,8 @@
   "vmmod.chaos_bee.danger": "<chaosbee> Uptime is off now!",
   "vmmod.chaos_bee.name": "Chaos Bee",
   "vmmod.chaos_bee.laugh": "<chaosbee> Hehe",
+  "vmmod.fake_player.name": "J_Phili",
+  "vmmod.fake_player.message": "<J_Phili> Why did you kill me? Now you are cursed with unluck for 878 seconds!",
 
   "vmmod.bot_crashed": "<Uptime> Bot crashed (theoretically .-.)"
 }
